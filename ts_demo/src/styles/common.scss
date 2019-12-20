@@ -1,0 +1,18 @@
+/**
+  修改webkit内核的浏览器滚动条样式
+  影响全局
+*/
+::-webkit-scrollbar{/*高宽分别对应横竖滚动条的尺寸*/
+  width: 5px;     
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: rgb(202, 201, 201);
+}
+::-webkit-scrollbar-thumb:hover{
+  background: rgb(180, 179, 179);
+}
+::-webkit-scrollbar-track{
+  background: #EEEEEE;
+}

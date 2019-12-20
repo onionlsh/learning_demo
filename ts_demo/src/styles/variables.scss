@@ -1,0 +1,14 @@
+/* headNav height*/
+$headNavHeight: 50px;
+
+/*sidebar 展开时宽度 */
+$sidebarOpenWidth: 200px;
+/*sidebar 收起时宽度*/
+$sidebarCloseWidth: 70px;
+
+
+:export{
+  headNavHeight: $headNavHeight;
+  sidebarOpenWidth: $sidebarOpenWidth;
+  sidebarCloseWidth: $sidebarCloseWidth;
+}

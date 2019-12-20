@@ -1,0 +1,10 @@
+/* 清除before/after的浮动 */
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+    font-size: 0;
+    clear: both;
+  }
+}
