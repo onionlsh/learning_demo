@@ -2,20 +2,18 @@
 const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
-const webpack = require('webpack')
-const { VueLoaderPlugin } = require('vue-loader')
-// const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
+const vueLoaderConfig = require('./vue-loader.conf')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
+
+
 module.exports = {
+  context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/main.ts',
-    vendor: [
-      "lodash"
-    ]
+    app: './src/main.ts'
   },
   output: {
     path: config.build.assetsRoot,
@@ -27,12 +25,13 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.vue', '.json', '.ts', '.tsx'],
     alias: {
+      'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
     }
   },
   module: {
     rules: [
-      {
+      /* {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
         enforce: 'pre',
@@ -40,44 +39,46 @@ module.exports = {
         options: {
           formatter: require('eslint-friendly-formatter')
         }
+      }, */
+      {
+        test: /\.ts$/,
+        exclude: /node_modules/,
+        enforce: 'pre',
+        loader: 'tslint-loader'
       },
       {
         test: /\.tsx?$/,
+        loader: 'ts-loader',
         exclude: /node_modules/,
-        enforce: 'pre',
-        use: [
-          {
-              loader: 'tslint-loader',
-              options: {
-                  configFile: 'tslint.json'
-              }
-          }
-        ]
+        options: {
+          appendTsSuffixTo: [/\.vue$/],
+        }
       },
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
-        // options: vueLoaderConfig
+        loader: 'vue-loader',
+        options: Object.assign(vueLoaderConfig, {
+          loaders: {
+            ts: "ts-loader",
+            tsx: "babel-loader!ts-loader"
+          }
+        })
       },
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
-        // loader: 'ts-loader',
         use: [
           "babel-loader",
           {
             loader: "ts-loader",
             options: { appendTsxSuffixTo: [/\.vue$/] }
-          },
-          {
-            loader: 'tslint-loader'
           }
         ]
       },
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test')]
+        include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
@@ -105,14 +106,16 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    // new ForkTsCheckerWebpackPlugin({
-    //   tslint: true,
-    //   vue: true
-    // }),
-    new VueLoaderPlugin(),
-    new webpack.ProvidePlugin({
-      _: 'lodash'
-    })
-  ]
+  node: {
+    // prevent webpack from injecting useless setImmediate polyfill because Vue
+    // source contains it (although only uses it if it's native).
+    setImmediate: false,
+    // prevent webpack from injecting mocks to Node native modules
+    // that does not make sense for the client
+    dgram: 'empty',
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty',
+    child_process: 'empty'
+  }
 }
