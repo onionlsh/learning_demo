@@ -10,11 +10,9 @@
         listen   80;
         server_name  xxx.xxx.com;			
         #charset koi8-r;
-
         #access_log  logs/host.access.log  main;
-
         location / {
-			     client_max_body_size 1024m;
+	   client_max_body_size 1024m;
            proxy_pass http://127.0.0.1:8080;
         }
    }
