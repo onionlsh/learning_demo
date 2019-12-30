@@ -1,0 +1,464 @@
+{
+  "menuList": [
+    {
+      "orgId": 2019001,
+      "userId": 20191217,
+      "menus": [
+        {
+          "code": 10000,
+          "cnName": "组织管理",
+          "enName": "Organization Manage",
+          "path": "/org",
+          "component": "org",
+          "dropdown": true,
+          "icon": "",
+          "children": [
+            {
+              "code": 10001,
+              "cnName": "我的组织",
+              "enName": "My Organization",
+              "path": "/org/my",
+              "component": "org/myOrg",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 10002,
+              "cnName": "组织架构",
+              "enName": "Structure",
+              "path": "/org/structure",
+              "component": "org/structure",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 10003,
+              "cnName": "我的关联",
+              "enName": "My Relation",
+              "path": "/org/relate",
+              "component": "org/relate",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 10004,
+              "cnName": "组织审核",
+              "enName": "Examine",
+              "path": "/org/examine",
+              "component": "org/examine",
+              "dropdown": false,
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "code": 20000,
+          "cnName": "角色管理",
+          "enName": "Role Manage",
+          "path": "/role",
+          "component": "role/role",
+          "dropdown": false,
+          "icon": ""
+        },
+        {
+          "code": 30000,
+          "cnName": "日志管理",
+          "enName": "Logs Manage",
+          "path": "/logs",
+          "component": "logs",
+          "dropdown": true,
+          "icon": "",
+          "children": [
+            {
+              "code": 30001,
+              "cnName": "登录日志",
+              "enName": "Login Logs",
+              "path": "/logs/login",
+              "component": "logs/login",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 30002,
+              "cnName": "操作日志",
+              "enName": "Operate",
+              "path": "/logs/operate",
+              "component": "logs/operate",
+              "dropdown": false,
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "code": 40000,
+          "cnName": "参数管理",
+          "enName": "Dict Manage",
+          "path": "/dict",
+          "component": "dict",
+          "dropdown": true,
+          "icon": "",
+          "children": [
+            {
+              "code": 40001,
+              "cnName": "组织类型",
+              "enName": "Department Type",
+              "path": "/dict/org",
+              "component": "dict/org",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 40002,
+              "cnName": "业务类型",
+              "enName": "Service Type",
+              "path": "/dict/service",
+              "component": "dict/service",
+              "dropdown": false,
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "code": 50000,
+          "cnName": "公告管理",
+          "enName": "Notice Manage",
+          "path": "/notice",
+          "component": "notice/notice",
+          "dropdown": false,
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "orgId": 2019002,
+      "userId": 20191217,
+      "menus": [
+        {
+          "code": 10000,
+          "cnName": "组织管理",
+          "enName": "Organization Manage",
+          "path": "/org",
+          "component": "org",
+          "dropdown": true,
+          "icon": "",
+          "children": [
+            {
+              "code": 10001,
+              "cnName": "我的组织",
+              "enName": "My Organization",
+              "path": "/org/my",
+              "component": "org/myOrg",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 10002,
+              "cnName": "组织架构",
+              "enName": "Structure",
+              "path": "/org/structure",
+              "component": "org/structure",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 10003,
+              "cnName": "我的关联",
+              "enName": "My Relation",
+              "path": "/org/relate",
+              "component": "org/relate",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 10004,
+              "cnName": "组织审核",
+              "enName": "Examine",
+              "path": "/org/examine",
+              "component": "org/examine",
+              "dropdown": false,
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "code": 20000,
+          "cnName": "角色管理",
+          "enName": "Role Manage",
+          "path": "/role",
+          "component": "role/role",
+          "dropdown": false,
+          "icon": ""
+        },
+        {
+          "code": 30000,
+          "cnName": "日志管理",
+          "enName": "Logs Manage",
+          "path": "/logs",
+          "component": "logs",
+          "dropdown": true,
+          "icon": "",
+          "children": [
+            {
+              "code": 30001,
+              "cnName": "登录日志",
+              "enName": "Login Logs",
+              "path": "/logs/login",
+              "component": "logs/login",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 30002,
+              "cnName": "操作日志",
+              "enName": "Operate",
+              "path": "/logs/operate",
+              "component": "logs/operate",
+              "dropdown": false,
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "code": 50000,
+          "cnName": "公告管理",
+          "enName": "Notice Manage",
+          "path": "/notice",
+          "component": "notice/notice",
+          "dropdown": false,
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "orgId": 2019001,
+      "userId": 2019122301,
+      "menus": [
+        {
+          "code": 10000,
+          "cnName": "组织管理",
+          "enName": "Organization Manage",
+          "path": "/org",
+          "component": "org",
+          "dropdown": true,
+          "icon": "",
+          "children": [
+            {
+              "code": 10001,
+              "cnName": "我的组织",
+              "enName": "My Organization",
+              "path": "/org/my",
+              "component": "org/myOrg",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 10002,
+              "cnName": "组织架构",
+              "enName": "Structure",
+              "path": "/org/structure",
+              "component": "org/structure",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 10003,
+              "cnName": "我的关联",
+              "enName": "My Relation",
+              "path": "/org/relate",
+              "component": "org/relate",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 10004,
+              "cnName": "组织审核",
+              "enName": "Examine",
+              "path": "/org/examine",
+              "component": "org/examine",
+              "dropdown": false,
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "code": 20000,
+          "cnName": "角色管理",
+          "enName": "Role Manage",
+          "path": "/role",
+          "component": "role/role",
+          "dropdown": false,
+          "icon": ""
+        },
+        {
+          "code": 30000,
+          "cnName": "日志管理",
+          "enName": "Logs Manage",
+          "path": "/logs",
+          "component": "logs",
+          "dropdown": true,
+          "icon": "",
+          "children": [
+            {
+              "code": 30001,
+              "cnName": "登录日志",
+              "enName": "Login Logs",
+              "path": "/logs/login",
+              "component": "logs/login",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 30002,
+              "cnName": "操作日志",
+              "enName": "Operate",
+              "path": "/logs/operate",
+              "component": "logs/operate",
+              "dropdown": false,
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "code": 40000,
+          "cnName": "参数管理",
+          "enName": "Dict Manage",
+          "path": "/dict",
+          "component": "dict",
+          "dropdown": true,
+          "icon": "",
+          "children": [
+            {
+              "code": 40001,
+              "cnName": "组织类型",
+              "enName": "Department Type",
+              "path": "/dict/org",
+              "component": "dict/org",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 40002,
+              "cnName": "业务类型",
+              "enName": "Service Type",
+              "path": "/dict/service",
+              "component": "dict/service",
+              "dropdown": false,
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "code": 50000,
+          "cnName": "公告管理",
+          "enName": "Notice Manage",
+          "path": "/notice",
+          "component": "notice/notice",
+          "dropdown": false,
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "orgId": 2019002,
+      "userId": 2019122301,
+      "menus": [
+        {
+          "code": 10000,
+          "cnName": "组织管理",
+          "enName": "Organization Manage",
+          "path": "/org",
+          "component": "org",
+          "dropdown": true,
+          "icon": "",
+          "children": [
+            {
+              "code": 10001,
+              "cnName": "我的组织",
+              "enName": "My Organization",
+              "path": "/org/my",
+              "component": "org/myOrg",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 10002,
+              "cnName": "组织架构",
+              "enName": "Structure",
+              "path": "/org/structure",
+              "component": "org/structure",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 10003,
+              "cnName": "我的关联",
+              "enName": "My Relation",
+              "path": "/org/relate",
+              "component": "org/relate",
+              "dropdown": false,
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "code": 30000,
+          "cnName": "日志管理",
+          "enName": "Logs Manage",
+          "path": "/logs",
+          "component": "logs",
+          "dropdown": true,
+          "icon": "",
+          "children": [
+            {
+              "code": 30002,
+              "cnName": "操作日志",
+              "enName": "Operate",
+              "path": "/logs/operate",
+              "component": "logs/operate",
+              "dropdown": false,
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "code": 40000,
+          "cnName": "参数管理",
+          "enName": "Dict Manage",
+          "path": "/dict",
+          "component": "dict",
+          "dropdown": true,
+          "icon": "",
+          "children": [
+            {
+              "code": 40001,
+              "cnName": "组织类型",
+              "enName": "Department Type",
+              "path": "/dict/org",
+              "component": "dict/org",
+              "dropdown": false,
+              "icon": ""
+            },
+            {
+              "code": 40002,
+              "cnName": "业务类型",
+              "enName": "Service Type",
+              "path": "/dict/service",
+              "component": "dict/service",
+              "dropdown": false,
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "code": 50000,
+          "cnName": "公告管理",
+          "enName": "Notice Manage",
+          "path": "/notice",
+          "component": "notice/notice",
+          "dropdown": false,
+          "icon": ""
+        }
+      ]
+    }
+  ]
+}

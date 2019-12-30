@@ -1,0 +1,65 @@
+{
+  "orgListData": [
+    {
+      "userId": 20191217,
+      "orgList": [
+        {
+          "id": 2019001,
+          "cnName": "广州黑格智造信息科技有限公司",
+          "enName": "Hey Gears",
+          "isSelected": true
+        },
+        {
+          "id": 2019002,
+          "cnName": "深圳市康泰健牙科器材有限公司",
+          "enName": "Shen Zhen",
+          "isSelected": false
+        }
+      ]
+    },
+    {
+      "userId": 2019122301,
+      "orgList": [
+        {
+          "id": 2019001,
+          "cnName": "广州黑格智造信息科技有限公司",
+          "enName": "Hey Gears",
+          "isSelected": false
+        },
+        {
+          "id": 2019002,
+          "cnName": "深圳市康泰健牙科器材有限公司",
+          "enName": "Shen Zhen",
+          "isSelected": true
+        }
+      ]
+    },
+    {
+      "userId": 2019122302,
+      "orgList": []
+    }
+  ],
+
+  "orgData": [
+    {
+      "userId": 20191217,
+      "currentOrg": {
+        "id": 2019001,
+        "cnName": "广州黑格智造信息科技有限公司",
+        "enName": "Hey Gears"
+      }
+    },
+    {
+      "userId": 2019122301,
+      "currentOrg": {
+        "id": 2019002,
+        "cnName": "深圳市康泰健牙科器材有限公司",
+        "enName": "Shen Zhen"
+      }
+    },
+    {
+      "userId": 2019122302,
+      "currentOrg": {}
+    }
+  ]
+}
