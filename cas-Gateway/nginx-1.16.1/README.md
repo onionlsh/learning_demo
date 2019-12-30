@@ -6,16 +6,18 @@
   127.0.0.1 xxx.xxx.com （你想要的域名）
   
 2.配置nginx的nginx.conf配置文件
-  server {
-        listen   80;
-        server_name  xxx.xxx.com;			
-        #charset koi8-r;
-        #access_log  logs/host.access.log  main;
-        location / {
-	   client_max_body_size 1024m;
-           proxy_pass http://127.0.0.1:8080;
-        }
-   }
+
+```
+	server{
+		listen 80;
+		server_name xxx.xxx.com
+		
+		location /{
+			client_max_body_size 1024m;
+			proxy_pass http://127.0.0.1:3000
+		}
+	}
+```
 
 保存后重启nginx
 
